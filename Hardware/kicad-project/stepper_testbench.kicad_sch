@@ -7,7 +7,7 @@
   (title_block
     (title "STB")
     (date "2022-08-09")
-    (rev "1.0")
+    (rev "0.2")
   )
 
   (lib_symbols
@@ -307,17 +307,17 @@
     (path "/76dcd9d5-5572-40f4-8fd8-c85b67346c2b/54a984bb-986e-47f3-9b33-c5b251489f49"
       (reference "C19") (unit 1) (value "0.1u") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
+    (path "/15d404d4-b523-49fd-a930-3a961bc97382/9c4cff2e-187e-41b5-aebb-68bc9f9c73e4"
+      (reference "CN7") (unit 1) (value "Conn_02x10_Odd_Even") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical")
+    )
     (path "/15d404d4-b523-49fd-a930-3a961bc97382/06079fe2-13a3-4637-9057-6ecf20940469"
-      (reference "CN1") (unit 1) (value "Conn_02x08_Odd_Even") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical")
+      (reference "CN8") (unit 1) (value "Conn_02x08_Odd_Even") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical")
     )
     (path "/15d404d4-b523-49fd-a930-3a961bc97382/450132e3-6a4a-4091-99e4-402c50b1f715"
-      (reference "CN2") (unit 1) (value "Conn_02x15_Odd_Even") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x15_P2.54mm_Vertical")
+      (reference "CN9") (unit 1) (value "Conn_02x15_Odd_Even") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x15_P2.54mm_Vertical")
     )
     (path "/15d404d4-b523-49fd-a930-3a961bc97382/6f387142-dfcd-4526-b3b5-9f1b73ef742e"
-      (reference "CN3") (unit 1) (value "Conn_02x17_Odd_Even") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x17_P2.54mm_Vertical")
-    )
-    (path "/15d404d4-b523-49fd-a930-3a961bc97382/9c4cff2e-187e-41b5-aebb-68bc9f9c73e4"
-      (reference "CN4") (unit 1) (value "Conn_02x10_Odd_Even") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical")
+      (reference "CN10") (unit 1) (value "Conn_02x17_Odd_Even") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x17_P2.54mm_Vertical")
     )
     (path "/15d404d4-b523-49fd-a930-3a961bc97382/bbf7431b-d1d7-4a66-b721-0e34405b16b8"
       (reference "D1") (unit 1) (value "LED_GN") (footprint "LED_SMD:LED_0603_1608Metric")
@@ -467,7 +467,7 @@
       (reference "U2") (unit 1) (value "L7805") (footprint "Package_TO_SOT_THT:TO-220-3_Vertical")
     )
     (path "/76dcd9d5-5572-40f4-8fd8-c85b67346c2b/274f4d80-4d03-4de9-ac08-71e8d143314a"
-      (reference "U3") (unit 1) (value "LEM-CAS-6NP") (footprint "Sensing lib:LEM-CAS-6-NP")
+      (reference "U3") (unit 1) (value "LEM-CAS-6NP") (footprint "Sensing lib:CAS-6-NP")
     )
     (path "/76dcd9d5-5572-40f4-8fd8-c85b67346c2b/60dbd4a3-6e30-4cfe-acbe-06f13b38bb49"
       (reference "U4") (unit 1) (value "LM35P") (footprint "Package_DIP:DIP-8_W7.62mm")

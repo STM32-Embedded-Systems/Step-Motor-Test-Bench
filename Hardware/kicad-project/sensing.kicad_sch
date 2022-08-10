@@ -953,7 +953,7 @@
     (uuid fea9718c-cd37-4caa-83bf-f8ad80b87161)
   )
 
-  (text "TORQUE SENSING" (at 84.074 83.058 0)
+  (text "TORQUE SENSING" (at 83.566 83.439 0)
     (effects (font (size 2 2) bold) (justify left bottom))
     (uuid 2e034e73-46d3-49ed-94ad-bb9874c86ddc)
   )
@@ -1154,7 +1154,7 @@
     (uuid 274f4d80-4d03-4de9-ac08-71e8d143314a)
     (property "Reference" "U3" (id 0) (at 23.622 32.258 0))
     (property "Value" "LEM-CAS-6NP" (id 1) (at 28.702 29.718 0))
-    (property "Footprint" "Sensing lib:LEM-CAS-6-NP" (id 2) (at 37.592 25.908 0)
+    (property "Footprint" "Sensing lib:CAS-6-NP" (id 2) (at 37.592 25.908 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.lem.com/sites/default/files/products_datasheets/cas_series.pdf" (id 3) (at 41.402 29.718 0)
