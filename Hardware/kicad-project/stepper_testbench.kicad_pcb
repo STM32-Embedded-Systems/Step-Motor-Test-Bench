@@ -578,7 +578,7 @@
       (net 5 "GND") (pinfunction "Pin_1") (pintype "passive") (tstamp 3f796650-f789-4621-8db3-238a25043e38))
     (pad "2" thru_hole oval (at 0 5.08 270) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 111 "/Power/VIN") (pinfunction "Pin_2") (pintype "passive") (tstamp 2bc1f94a-dc1e-4410-a149-f67a43239568))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1040,7 +1040,7 @@
       (net 127 "/Connectors/24V_BRAKE") (pinfunction "Pin_1") (pintype "passive") (tstamp 711e9822-edcd-4345-83a2-d09cb1557664))
     (pad "2" thru_hole oval (at 0 5.08 90) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 119 "Net-(D1-Pad1)") (pinfunction "Pin_2") (pintype "passive") (tstamp 725df899-6ccb-41cc-b073-46b651ec135d))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3160,7 +3160,7 @@
       (net 128 "/Connectors/STEPPER+") (pinfunction "Pin_1") (pintype "passive") (tstamp 3461eeb7-7801-4932-b532-6f5fec8d4434))
     (pad "2" thru_hole oval (at 0 -5.08) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 130 "Net-(Q2-Pad2)") (pinfunction "Pin_2") (pintype "passive") (tstamp 18dcb17a-d81c-4b8b-8db2-863005a99fab))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
