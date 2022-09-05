@@ -4,6 +4,13 @@
 
   (paper "A4")
 
+  (title_block
+    (title "STB - Expansion Board")
+    (date "2022-08-09")
+    (rev "0.2")
+    (company "ProM Facility ")
+  )
+
   (lib_symbols
     (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
       (property "Reference" "TP" (id 0) (at 0 6.858 0)
@@ -2543,7 +2550,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 3b29b2ab-1684-4c78-bd80-940c092347b2)
   )
-  (text "NUCLEO STM32H7 ZIO CONNECTORS\n" (at 47.244 79.629 0)
+  (text "NUCLEO STM32F7 ZIO CONNECTORS\n" (at 47.244 79.629 0)
     (effects (font (size 2 2) bold) (justify left bottom))
     (uuid 556788c4-9da8-4df7-b77d-6ada337fee14)
   )
@@ -2567,7 +2574,7 @@
     (effects (font (size 2 2) (thickness 0.4) bold) (justify left bottom))
     (uuid c530887d-6ca1-4154-9dd0-f4a45ede26db)
   )
-  (text "State leds for .." (at 51.054 184.912 0)
+  (text "State LEDs" (at 65.913 155.194 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid de058b59-8cf9-4e9c-a711-c8c6681c8f0f)
   )

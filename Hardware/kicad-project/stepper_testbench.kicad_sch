@@ -5,9 +5,10 @@
   (paper "A4")
 
   (title_block
-    (title "STB")
+    (title "STB - Expansion Board")
     (date "2022-08-09")
     (rev "0.2")
+    (company "ProM Facility ")
   )
 
   (lib_symbols

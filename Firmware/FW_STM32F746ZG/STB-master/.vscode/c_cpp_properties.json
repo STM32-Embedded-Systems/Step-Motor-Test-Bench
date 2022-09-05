@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "name": "STM32",
+      "includePath": [
+        "Core/Inc",
+        "Core/Lib/brake",
+        "Core/Lib/pwm",
+        "Core/Lib/slave_cmd_utils",
+        "Core/Lib/timer_utils",
+        "Drivers/CMSIS/Device/ST/STM32F7xx/Include",
+        "Drivers/CMSIS/Include",
+        "Drivers/STM32F7xx_HAL_Driver/Inc",
+        "Drivers/STM32F7xx_HAL_Driver/Inc/Legacy"
+      ],
+      "defines": [
+        "STM32F746xx",
+        "USE_HAL_DRIVER"
+      ],
+      "compilerPath": "/Users/macbookpro/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/10.2.1-1.1.2/.content/bin/arm-none-eabi-gcc"
+    }
+  ],
+  "version": 4
+}
