@@ -209,7 +209,7 @@ class Micro_serial_handler(threading.Thread):
     def master_echo_callback(self):
         while self.is_running:
             master_tx = self.read_line("master")
-            print(f"MASTER CALLBACK {master_tx}")
+            #print(f"MASTER CALLBACK {master_tx}")
             if self.read_line("master") != None:
                 # Note that with a fixed size buffer all NULL chars are filed with \x00
                 # To display in a correct way on the gui it's necessary to erase those chars

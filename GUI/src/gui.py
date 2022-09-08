@@ -16,6 +16,8 @@ motor_settings_win_pos = (400, 0)
 serial_win_pos = (0, 440)
 MAX_MOTOR_STEP_DIGITS = 6
 MAX_ACQUISITION_TIME_DIGITS = 2
+SLAVE_BUFF_SIZE = 107
+TOTAL_SLAVE_MOTOR_CMD_LEN = 11
 
 
 def plot_V():
@@ -84,6 +86,12 @@ def build_movement_cmd(val):
     str_val = str(val)
     zeros = MAX_MOTOR_STEP_DIGITS - len(str_val)
     return str(("0"*zeros)+str(val))
+
+def add_padding():
+    zeros = (SLAVE_BUFF_SIZE-TOTAL_SLAVE_MOTOR_CMD_LEN)-1
+    ret_str = str("\r\n"+"0"*zeros)
+    #print("PADDING!"+ret_str)
+    return ret_str
 
 
 def build_acquisition_cmd(val):
@@ -595,18 +603,18 @@ class GUI(threading.Thread):
                                   max_value=999999, width=100, max_clamped=True, min_clamped=True)
                 with dpg.group(horizontal=True) as motor_control_buttons_section_A:
                     dpg.add_button(label="Move forward", callback=lambda: send_generic_command(
-                        self.msc_handler, "slave", "fw+"+build_movement_cmd(dpg.get_value("motor_steps_to_do"))))
+                        self.msc_handler, "slave", "fw+"+build_movement_cmd(dpg.get_value("motor_steps_to_do"))+add_padding()))
                     dpg.add_button(label="Move backward", callback=lambda: send_generic_command(
-                        self.msc_handler, "slave", "bw+"+build_movement_cmd(dpg.get_value("motor_steps_to_do"))))
+                        self.msc_handler, "slave", "bw+"+build_movement_cmd(dpg.get_value("motor_steps_to_do"))+add_padding()))
                     dpg.add_button(label="Go to position", callback=lambda: send_generic_command(
-                        self.msc_handler, "slave", "gt+"+build_movement_cmd(dpg.get_value("motor_steps_to_do"))))
+                        self.msc_handler, "slave", "gt+"+build_movement_cmd(dpg.get_value("motor_steps_to_do"))+add_padding()))
                 with dpg.group(horizontal=True) as motor_control_buttons_section_B:
                     dpg.add_button(label="Go home", callback=lambda: send_generic_command(
-                        self.msc_handler, "slave", "gh+000000"))
+                        self.msc_handler, "slave", "gh+000000"+add_padding()))
                     dpg.add_button(label="Motor stop", callback=lambda: send_generic_command(
-                        self.msc_handler, "slave", "st+000000"))
+                        self.msc_handler, "slave", "st+000000"+add_padding()))
                     dpg.add_button(label="Motor hold", callback=lambda: send_generic_command(
-                        self.msc_handler, "slave", "hd+000000"))
+                        self.msc_handler, "slave", "hd+000000"+add_padding()))
             # Brake window
             with dpg.group() as brake_window:
                 dpg.add_text("Brake control", color=light_blue)
